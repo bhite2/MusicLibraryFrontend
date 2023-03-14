@@ -1,5 +1,7 @@
 import React, {useState, useEffect} from "react";
 import axios from "axios";
+import NavBar from "./Components/NavigationBar/NavigationBar";
+import MusicTable from "./Components/MusicTable/MusicTable";
 
 function App() {
 
@@ -17,6 +19,8 @@ function App() {
 
   return (
     <div>
+      <NavBar/>
+      <MusicTable/>
 
       <button onClick={() => getAllSongs()}>Get All Songs</button>
 
