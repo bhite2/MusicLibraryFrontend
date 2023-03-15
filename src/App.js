@@ -27,12 +27,11 @@ function App() {
             <NavBar />
         </div>
         <div>
-          <div className="searchbar">
-          <SearchBar search={filter} setSearch={setFilter} />
-          </div>
+
           <div className="music-container">
 
           <div className="forms">
+            <SearchBar search={filter} setSearch={setFilter} />
             <MusicTable songs={songs} search={filter} />
           </div>
           <div className="forms">
