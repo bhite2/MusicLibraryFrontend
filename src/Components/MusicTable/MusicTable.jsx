@@ -1,3 +1,5 @@
+import './MusicTable.css'
+
 const MusicTable = (props) => {
     return ( 
         <table>

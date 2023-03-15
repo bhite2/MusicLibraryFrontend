@@ -21,30 +21,29 @@ function App() {
     setSongs(response.data);
   }
 
-  // function handleFilter(event){
-  //   event.PreventDefault()
-  //   let searchResults = 
-  //   setSearch(searchResults)
-
-  // }
-
   return (
-    <div class = 'body'>
-      <div>
-        <NavBar/>
-      </div>
-      <div>
-        <SearchBar search = {filter} setSearch = {setFilter}/>
-      </div>
-      <div>
-        <MusicTable songs = {songs} search = {filter} />
-      </div>
-      <div>
-        <CreateSong getAllSongs = {getAllSongs}/>
-      </div>
+    <><head>
+           <div>
+            <NavBar />
+          </div>
+    </head>
+ 
+    <body>
+        <div>
+          <div className="search">
+            <SearchBar search={filter} setSearch={setFilter} />
+          </div>
+          <div className="table">
+            <MusicTable songs={songs} search={filter} />
+          </div>
+          <div className="table">
+            <CreateSong getAllSongs={getAllSongs} />
+          </div>
 
 
-    </div>
+        </div>
+      </body></>
+
   );
 }
 
