@@ -10,23 +10,11 @@ body {
     background-color: black;
     color: white;
     margin: 1em;
-    padding: 20px;
+    padding: 10px;
     border-radius: 5px;
     box-shadow: 3px 3px darkgray;
 }
 
 .music-container {
     display: flex;
-    flex-direction: row;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    align-items: center;
-}
-
-.searchbar {
-    display: flex;
-    justify-content: flex-start;
-    padding: 10px;
 }
