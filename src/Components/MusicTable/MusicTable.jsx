@@ -14,10 +14,10 @@ const MusicTable = (props) => {
             </thead>
             <tbody>
                 {props.songs
-                .filter((song) => song.title.includes(props.search) ||
-                song.artist.includes(props.search) ||
-                song.album.includes(props.search) ||
-                song.genre.includes(props.search) ||
+                .filter((song) => song.title.toLowerCase().includes(props.search.toLowerCase()) ||
+                song.artist.toLowerCase().includes(props.search.toLowerCase()) ||
+                song.album.toLowerCase().includes(props.search.toLowerCase()) ||
+                song.genre.toLowerCase().includes(props.search.toLowerCase()) ||
                 song.release_date.includes(props.search))
                 .map((song) => {
                     return (

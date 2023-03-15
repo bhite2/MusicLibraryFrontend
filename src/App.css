@@ -2,18 +2,27 @@ body {
     background-image: url(Assets/concert.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    align-content: center;
 }
-
-.table {
+*{
+    margin:0
+}
+.forms {
     background-color: black;
     color: white;
     margin: 1em;
-    display: inline-flex;
     padding: 20px;
     border-radius: 5px;
+    box-shadow: 3px 3px darkgray;
 }
 
-.search {
-    align-content: center;
+.music-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.searchbar {
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
 }

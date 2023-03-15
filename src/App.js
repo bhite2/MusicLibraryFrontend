@@ -22,27 +22,26 @@ function App() {
   }
 
   return (
-    <><head>
-           <div>
-            <NavBar />
-          </div>
-    </head>
- 
-    <body>
+    <>
         <div>
-          <div className="search">
-            <SearchBar search={filter} setSearch={setFilter} />
+            <NavBar />
+        </div>
+        <div>
+          <div className="searchbar">
+          <SearchBar search={filter} setSearch={setFilter} />
           </div>
-          <div className="table">
+          <div className="music-container">
+
+          <div className="forms">
             <MusicTable songs={songs} search={filter} />
           </div>
-          <div className="table">
+          <div className="forms">
             <CreateSong getAllSongs={getAllSongs} />
           </div>
-
+          </div>
 
         </div>
-      </body></>
+      </>
 
   );
 }
