@@ -11,7 +11,13 @@ const MusicTable = (props) => {
                 </tr>
             </thead>
             <tbody>
-                {props.songs.map((song) => {
+                {props.songs
+                .filter((song) => song.title.includes(props.search) ||
+                song.artist.includes(props.search) ||
+                song.album.includes(props.search) ||
+                song.genre.includes(props.search) ||
+                song.release_date.includes(props.search))
+                .map((song) => {
                     return (
                         <tr>
                             <td>{song.title}</td>
